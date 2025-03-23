@@ -49,7 +49,7 @@ for item in dados_posts:
         item['comentarios'],
         json.dumps(item['tags'])
     ))
-
+print("Dados dos últimos 50 posts do Stack Overflow salvos no banco de dados com sucesso.")
 conexao.commit()
 conexao.close()
 
