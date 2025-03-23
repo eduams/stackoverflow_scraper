@@ -73,7 +73,7 @@ def get_users():
         print(row[0])
     return
 
-def get_posts_more_5_likes():
+def get_posts_negative_likes():
     conexao = sqlite3.connect("dados.db")
     cursor = conexao.cursor()
     cursor.execute('SELECT titulo, usuario, likes FROM posts WHERE likes < 0')
@@ -96,4 +96,4 @@ if selection == 1:
 elif selection == 2:
     get_users()
 elif selection == 3:
-    get_posts_more_5_likes()
+    get_posts_negative_likes()
