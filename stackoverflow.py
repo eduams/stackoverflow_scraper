@@ -86,7 +86,6 @@ def get_posts_negative_likes():
         print(row[1])
         print("Likes: ", end="")
         print(row[2])
-
     return
 
 print("Escolha uma das consultas abaixo:")
